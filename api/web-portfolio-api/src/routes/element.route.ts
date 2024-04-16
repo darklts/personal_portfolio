@@ -9,6 +9,21 @@ import {
 
 const router = Router()
 
+/**
+ * @openapi
+ * /users:
+ *   get:
+ *     summary: Returns a list of users.
+ *     responses:
+ *       200:
+ *         description: A JSON array of user names
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: array
+ *               items:
+ *                 type: string
+ */
 router.get('/', getElements)
 router.get('/:id', getElement)
 router.post('/', postElement)

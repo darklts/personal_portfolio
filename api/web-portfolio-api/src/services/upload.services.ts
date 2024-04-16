@@ -46,11 +46,9 @@ export class Upload {
 
     return Promise.all(uploadPromises)
       .then(responses => {
-        // responses contendrá un array con las respuestas de las subcargas individuales.
         return responses
       })
       .catch(error => {
-        // Maneja los errores si alguna de las subcargas falla.
         throw error
       })
   }
