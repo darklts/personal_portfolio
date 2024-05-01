@@ -1,11 +1,15 @@
-import React from 'react'
-import './App.css'
+import { FC } from 'react'
 
-function App() {
+interface AppProps {
+  title: string
+}
+
+const App: FC<AppProps> = ({ title }) => {
   return (
-    <div className="App">
-      <h1>Hello worr</h1>
-    </div>
+    <>
+      <h1>{title}</h1>
+      <p>Open the console to see the output of the Typescript code.</p>
+    </>
   )
 }
 

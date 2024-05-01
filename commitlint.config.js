@@ -14,6 +14,8 @@ module.exports = {
         'ui',
         'api',
         'database',
+        'portfolio',
+        'app',
       ],
     ],
   },
