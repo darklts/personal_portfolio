@@ -1,0 +1,50 @@
+.experience-container {
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 auto;
+  height: var(--innerHeight);
+  padding: 100px 80px 40px 80px;
+
+  h2 {
+    font-size: 2.1rem;
+    color: #3ca6a6;
+    margin-bottom: 60px;
+  }
+
+  p {
+    text-align: justify;
+  }
+
+  @media (max-width: 1030px) {
+    padding: 100px 5% 40px 5%;
+    height: var(--innerHeight);
+    h2 {
+      text-align: center;
+    }
+  }
+}
+
+.experience-buttom-resume {
+  margin: 30px 0 40px 0;
+  display: flex;
+  justify-content: right;
+}
+
+.experience-grid {
+  box-sizing: content-box;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(49%, 2fr));
+  gap: 20px;
+
+  @media (max-width: 1030px) {
+    display: block;
+  }
+}
+
+.experience-grid-text {
+  width: 100%;
+}
+
+.experience-grid-card {
+  width: 100%;
+}

@@ -1,0 +1,33 @@
+.projects-container {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px 80px 100px 80px;
+  text-align: center;
+
+  p {
+    margin: 5px;
+  }
+
+  @media (max-width: 800px) {
+    padding: 20px 5% 100px 5%;
+  }
+}
+
+.projects-container-title {
+  font-size: 35px;
+  color: #3ca6a6;
+  margin-bottom: 60px;
+}
+
+.projects-grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+}
+
+.projects-grid {
+  box-sizing: content-box;
+  padding-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+  gap: 30px;
+}

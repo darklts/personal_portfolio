@@ -1,0 +1,46 @@
+.job-position-grid {
+  box-sizing: border-box;
+  margin-bottom: 30px;
+  display: grid;
+  grid-template-columns: 120px auto;
+  gap: 10px;
+
+  @media (max-width: 500px) {
+    display: block;
+  }
+}
+
+.job-position-date-grid {
+  font-size: 14px;
+  color: #4c5958;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.job-position-text-grid {
+  font-size: 17px;
+  width: 100%;
+  h4 {
+    margin: 0;
+    text-transform: capitalize;
+  }
+
+  span {
+    margin: 0;
+    color: #3ca6a6;
+    font-size: 14px;
+    text-transform: capitalize;
+  }
+
+  p {
+    margin-top: 5px;
+  }
+}
+
+.hr-grid {
+  border: 1px solid #3ca6a6;
+  margin-top: -25px;
+  margin-bottom: 40px;
+  text-align: center;
+  width: 80%;
+}
