@@ -24,6 +24,13 @@ const SectionSchema = new Schema<ISection>(
       type: Boolean,
       required: true,
     },
+    image: {
+      type: Object,
+    },
+    tag: {
+      type: String,
+      required: false,
+    },
   },
   {
     timestamps: true,

@@ -5,3 +5,5 @@ const router = Router()
 
 router.post('/imageUpload', singleUpload)
 router.post('/multiUpload', multiUpload)
+
+export { router }

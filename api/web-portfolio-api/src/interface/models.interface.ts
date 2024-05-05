@@ -6,6 +6,8 @@ export interface ISection extends Document {
   description: string
   order: number
   visibility: boolean
+  image: IFile
+  tag: string
 }
 
 export interface IElement extends Document {
@@ -30,4 +32,11 @@ export interface ISocialMedia extends Document {
   name: string
   link: string
   icon: object
+}
+
+export interface IFile {
+  path: string
+  public_id: string
+  tag: string
+  format: string
 }

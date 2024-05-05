@@ -2,7 +2,8 @@ import { connect, connection, ConnectOptions } from 'mongoose'
 
 async function connectToDB(): Promise<void> {
   try {
-    const DB_URI = process.env.DB_URI as string
+    const DB_URI =
+      'mongodb+srv://dark:Seccion.96@merakaicluster.9wihlla.mongodb.net/web_portfolio?retryWrites=true&w=majority&appName=MerakaiCluster'
 
     await connect(DB_URI, {
       useNewUrlParser: true,
